@@ -1,7 +1,7 @@
 Modular Configuration
 =====================
 
-A minimalistic configuration manager made _The Node Way_™.
+A minimalistic configuration manager made _The Node Way_ ™.
 
 # Goals
 
