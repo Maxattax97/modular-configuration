@@ -33,7 +33,7 @@
     "list"
   ],
   "author": "Max O'Cull",
-  "license": "GPL-3.0-or-later",
+  "license": "See LICENSE.md",
   "dependencies": {
     "bluebird": "^3.5.1",
     "dot-prop": "^4.2.0"

@@ -56,40 +56,41 @@ Contents of `./alternate.json`:
 
 Example usage:
 ```javascript
-const Config = require("modular-configuration");
-let config = new Config();
-let path = require("path");
+const Config = require('modular-configuration');
+
+const config = new Config();
+const path = require('path');
 
 config.setStrict(true);
 
-config.load(Path.join(__dirname, "/config.json"))
-    .then(function() {
-        console.log(config.get("Name")); // -> John
-        console.log(config.get("Values")); // -> [ 1, 2, 3, 9, 7, 8 ]
-        console.log(config.get("Redirect.Home.Address")); // -> https://example.com/
-        console.log(config.set("Name", "Nick"));
-        console.log(config.get("Name")); // -> Nick
+config.load(path.join(__dirname, '/config.json'))
+  .then(() => {
+    console.log(config.get('Name')); // -> John
+    console.log(config.get('Values')); // -> [ 1, 2, 3, 9, 7, 8 ]
+    console.log(config.get('Redirect.Home.Address')); // -> https://example.com/
+    console.log(config.set('Name', 'Nick'));
+    console.log(config.get('Name')); // -> Nick
 
-        let alternate = new Config();
+    const alternate = new Config();
 
-        // Alternative loading method
-        alternate.load("./alternate.json")
-            .then(function() {
-                console.log(config.get("Name")); // -> Elizabeth
-            })
-            .catch(function(err) {
-                console.error(err);
-            });
-
-        let subConfig = new Config();
-        subConfig.loadSync(config.get("Object"));
-        console.log(subConfig.get("Name")); // -> Jake
-        console.log(subConfig.get("Values")); // -> [ 100, 200, 300 ]
-    })
-    .then(function() {
-        console.log(config.get("Unknown")); // Should crash
-    })
-    .catch(function(err) {
+    // Alternative loading method
+    alternate.load('./alternate.json')
+      .then(() => {
+        console.log(config.get('Name')); // -> Elizabeth
+      })
+      .catch((err) => {
         console.error(err);
-    });
+      });
+
+    const subConfig = new Config();
+    subConfig.loadSync(config.get('Object'));
+    console.log(subConfig.get('Name')); // -> Jake
+    console.log(subConfig.get('Values')); // -> [ 100, 200, 300 ]
+  })
+  .then(() => {
+    console.log(config.get('Unknown')); // Should crash
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 ```
