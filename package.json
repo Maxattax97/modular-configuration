@@ -1,0 +1,45 @@
+{
+  "name": "modular-configuration",
+  "version": "0.0.1",
+  "description": "A minimalistic configuration manager made The Node Way (TM)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint lint ."
+  },
+  "keywords": [
+    "config",
+    "configuration",
+    "module",
+    "modular",
+    "simple",
+    "minimalist",
+    "minimalistic",
+    "manager",
+    "simplistic",
+    "overlay",
+    "async",
+    "asyncrhonous",
+    "promises",
+    "get",
+    "set",
+    "delete",
+    "save",
+    "immutable",
+    "dot",
+    "notation",
+    "strict",
+    "overlay",
+    "list"
+  ],
+  "author": "Max O'Cull",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "dot-prop": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}
