@@ -1,6 +1,6 @@
 {
   "name": "modular-configuration",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A minimalistic configuration manager made The Node Way (TM)",
   "main": "index.js",
   "scripts": {
