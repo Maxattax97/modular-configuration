@@ -1,6 +1,6 @@
 {
   "name": "modular-configuration",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A minimalistic configuration manager made The Node Way (TM)",
   "main": "index.js",
   "scripts": {
@@ -33,16 +33,16 @@
     "list"
   ],
   "author": "Max O'Cull",
-  "license": "See LICENSE.md",
+  "license": "BSD-3-Clause",
   "dependencies": {
-    "bluebird": "^3.5.1",
+    "bluebird": "^3.5.3",
     "dot-prop": "^4.2.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-import": "^2.16.0",
     "mocha": "^5.2.0"
   }
 }
